@@ -1,5 +1,6 @@
 class Order:
-    def __init__(self, items):
+    def __init__(self, customer_id, items):
+        self.customer_id = customer_id
         self.order_items = []
         for item in items:
             self.order_items.append(item)
